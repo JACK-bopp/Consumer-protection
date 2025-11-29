@@ -1,0 +1,19 @@
+{
+  "name": "consumer-protection",
+  "version": "1.0.0",
+  "description": "消费与订阅守护 UX 原型：提供本地静态站点与 API 代理，便于接入真实支付/账单接口。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build-config": "node scripts/build-config.js"
+  },
+  "keywords": [
+    "ux",
+    "payments",
+    "subscriptions",
+    "budget"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs"
+}

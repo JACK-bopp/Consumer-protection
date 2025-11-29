@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>消费 & 订阅守护</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="branding">消费 & 订阅守护</div>
+      <p class="subtitle">帮你看清钱花哪儿了，不再被乱扣费。</p>
+    </header>
+    <main class="layout">
+      <section class="card" id="status-card">
+        <div class="card-header">
+          <h2>实时连接</h2>
+          <span class="badge" id="status-badge">等待检测…</span>
+        </div>
+        <p>检测本地代理到真实 API 的连通性，并提示密钥配置情况。</p>
+        <pre id="status-log" class="log"></pre>
+        <button id="retry-button" class="button">重新检测</button>
+      </section>
+      <section class="card">
+        <div class="card-header">
+          <h2>下一步 UX 开发建议</h2>
+        </div>
+        <ul class="steps">
+          <li>在 <code>src/components</code> 下扩展交易列表与订阅清单模块。</li>
+          <li>对接 <code>/api/status</code> 之外的订单、订阅、预算接口。</li>
+          <li>根据 <code>public/runtime-config.json</code> 分离环境与密钥管理。</li>
+        </ul>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
